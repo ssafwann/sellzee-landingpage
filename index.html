@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="main.js" defer></script>
+    <title>Sellzee</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-small">
+        <img
+          src="images/logo.svg"
+          alt="Sellzee company logo"
+          class="header__logo"
+        />
+
+        <!-- ! hambuger and close btn -->
+        <button
+          aria-label="open the menu"
+          id="menu-button"
+          class="header__hamburger header__hamburger--spring"
+          type="button"
+        >
+          <span aria-hidden="true" class="header__hamburger-box">
+            <span aria-hidden="true" class="header__hamburger-inner"></span>
+          </span>
+        </button>
+
+        <nav class="primary-navigation">
+          <ul role="list" class="nav-list" aria-label="primary">
+            <li class="nav-list-item">
+              <a
+                href="#"
+                class="nav-list-item-link nav-list-item-link--active | text-neutral-100"
+                >Home</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link | text-neutral-100"
+                >About</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link | text-neutral-100"
+                >Events</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link | text-neutral-100"
+                >Contact</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link | text-neutral-100"
+                >Testimonial</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link | text-neutral-100"
+                >Pricing</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a href="#" class="nav-list-item-link"
+                ><button class="button">Get Started</button></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="hero">
+        <div class="container-small">
+          <div class="hero__col">
+            <p class="hero__title | fs-200 fw-medium">
+              INSPIRATION TECHNOLOGY.
+            </p>
+            <h1 class="hero__h1 | fs-500 fw-semibold">
+              Runs faster.
+              <span class="fw-regular fs-450"
+                >Costs less and never breaks.</span
+              >
+            </h1>
+            <p class="hero__subtext fs-100 fw-light">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              sapien lectus sit tristique rhoncus, nisi, malesuada. Tellus
+              consequat.
+            </p>
+            <div class="hero__buttons">
+              <button class="button">Get Started</button>
+              <button class="button" type="transparent">Free Trial</button>
+            </div>
+          </div>
+
+          <div class="hero__col">
+            <img class="hero__image" src="images/hero.svg" alt="hero image" />
+          </div>
+        </div>
+      </section>
+
+      <section class="collabs | bg-neutral-100">
+        <div class="container-small">
+          <div class="box">
+            <img
+              src="images/logo-fedex.svg"
+              alt="Google logo"
+              class="collabs__logos"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="images/logo-google.svg"
+              alt="Google logo"
+              class="collabs__logos"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="images/logo-ola.svg"
+              alt="Ola logo"
+              class="collabs__logos"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="images/logo-microsoft.svg"
+              alt="Microsoft logo"
+              class="collabs__logos"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="images/logo-amazon.svg"
+              alt="Amazon logo"
+              class="collabs__logos"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="images/logo-fedex-small.svg"
+              alt="Fedx logo"
+              class="collabs__logos"
+            />
+          </div>
+          <div class="box">
+            <img
+              src="images/logo-walmart.svg"
+              alt="Walmart Logo"
+              class="collabs__logos"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="solutions | bg-neutral-100">
+        <div class="container-small">
+          <div class="solutions__col">
+            <img
+              class="solutions__image"
+              src="images/simple-solutions.svg"
+              alt="A man thinking of a solution"
+            />
+          </div>
+
+          <div class="solutions__col">
+            <p class="soltutions__title | text-primary-500 fw-semibold">
+              THE PRODUCT JUST FOR YOU
+            </p>
+
+            <h2 class="solutions__heading | text-neutral-900 fs-502 fw-bold">
+              Simple Solutions for Complex Connections
+            </h2>
+
+            <p class="solutions__subtext | fs-100 fw-regular text-neutral-900">
+              Simple solutions bring clarity and ease, offering efficient
+              answers to complex challenges. Embrace simplicity to streamline
+              processes, eliminate complications.
+            </p>
+
+            <div class="solutions__row">
+              <div class="solutions__row__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#000000"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" />
+                </svg>
+                <p class="text-neutral-900 fs-102 fw-semibold">High Analysis</p>
+              </div>
+
+              <div class="solutions__row__item">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#000000"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" />
+                </svg>
+                <p class="text-neutral-900 fs-102 fw-semibold">
+                  Certified Institute
+                </p>
+              </div>
+            </div>
+            <button class="button">Get Started</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="info | bg-neutral-100">
+        <div class="container-small">
+          <div class="info__box">
+            <p class="text-primary-850 fs-700 fw-bold">50+</p>
+            <p class="text-neutral-900 fw-medium fs-102">Happy Clients</p>
+          </div>
+          <div class="info__box">
+            <p class="text-primary-850 fs-700 fw-bold">550+</p>
+            <p class="text-neutral-900 fw-medium fs-102">Projects Completed</p>
+          </div>
+          <div class="info__box">
+            <p class="text-primary-850 fs-700 fw-bold">250</p>
+            <p class="text-neutral-900 fw-medium fs-102">Dedicated Members</p>
+          </div>
+          <div class="info__box">
+            <p class="text-primary-850 fs-700 fw-bold">30+</p>
+            <p class="text-neutral-900 fw-medium fs-102">Awards Won</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="vision | bg-neutral-300 text-neutral-900">
+        <div class="container-small">
+          <div class="vision__item">
+            <p class="vision__title | text-primary-500 fw-semibold">
+              YOUR VISION, OUR FUTURE
+            </p>
+            <h3 class="vision__subtitle | fs-250 text-neutral-900 fw-bold">
+              Committed to People, Committed
+            </h3>
+            <p class="fs-100 fw-regular text-neutral-900">
+              The vision will be to stay committed to customers we serve.
+            </p>
+          </div>
+          <div class="vision__item | bg-primary-800" type="box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-bulb"
+              width="52"
+              height="52"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#ffffff"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+              <path
+                d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"
+              />
+              <path d="M9.7 17l4.6 0" />
+            </svg>
+            <p
+              class="vision__item__title | fw-semibold text-neutral-100 fs-200"
+            >
+              Creative Ideas
+            </p>
+            <p class="vision__item__subtext | fs-100 fw-light text-neutral-100">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed donec
+              gravida
+            </p>
+          </div>
+          <div class="vision__item | bg-neutral-100" type="box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-ballpen"
+              width="52"
+              height="52"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#1F37FF"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M14 6l7 7l-4 4" />
+              <path
+                d="M5.828 18.172a2.828 2.828 0 0 0 4 0l10.586 -10.586a2 2 0 0 0 0 -2.829l-1.171 -1.171a2 2 0 0 0 -2.829 0l-10.586 10.586a2.828 2.828 0 0 0 0 4z"
+              />
+              <path d="M4 20l1.768 -1.768" />
+            </svg>
+            <p
+              class="vision__item__title | fw-semibold text-neutral-900 fs-200"
+            >
+              Beautiful Blog
+            </p>
+            <p class="vision__item__subtext | fs-100 fw-light text-neutral-900">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed donec
+              gravida
+            </p>
+          </div>
+          <div class="vision__item | bg-neutral-100" type="box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-friends"
+              width="52"
+              height="52"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#1F37FF"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M7 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path
+                d="M5 22v-5l-1 -1v-4a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4l-1 1v5"
+              />
+              <path d="M17 5m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path
+                d="M15 22v-4h-2l2 -6a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1l2 6h-2v4"
+              />
+            </svg>
+            <p
+              class="vision__item__title | fw-semibold text-neutral-900 fs-200"
+            >
+              User Friendly
+            </p>
+            <p class="vision__item__subtext | fs-100 fw-light text-neutral-900">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed donec
+              gravida
+            </p>
+          </div>
+          <div class="vision__item | bg-neutral-100" type="box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-presentation"
+              width="52"
+              height="52"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#1F37FF"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 4l18 0" />
+              <path d="M4 4v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-10" />
+              <path d="M12 16l0 4" />
+              <path d="M9 20l6 0" />
+              <path d="M8 12l3 -3l2 2l3 -3" />
+            </svg>
+            <p
+              class="vision__item__title | fw-semibold text-neutral-900 fs-200"
+            >
+              Perfect Showcase
+            </p>
+            <p class="vision__item__subtext | fs-100 fw-light text-neutral-900">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed donec
+              gravida
+            </p>
+          </div>
+          <div class="vision__item | bg-neutral-100" type="box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icon icon-tabler icon-tabler-heart-handshake"
+              width="52"
+              height="52"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="#1F37FF"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+              />
+              <path
+                d="M12 6l-3.293 3.293a1 1 0 0 0 0 1.414l.543 .543c.69 .69 1.81 .69 2.5 0l1 -1a3.182 3.182 0 0 1 4.5 0l2.25 2.25"
+              />
+              <path d="M12.5 15.5l2 2" />
+              <path d="M15 13l2 2" />
+            </svg>
+            <p
+              class="vision__item__title | fw-semibold text-neutral-900 fs-200"
+            >
+              Easy to use
+            </p>
+            <p class="vision__item__subtext | fs-100 fw-light text-neutral-900">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed donec
+              gravida
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="charges | bg-neutral-250">
+        <div class="container-small">
+          <h4 class="text-neutral-900 fs-301 fw-bold">
+            Without Extra Charge Choose Your Best Plan
+          </h4>
+          <div class="buttons__charges | bg-neutral-100">
+            <button class="button">Monthly</button>
+            <button class="button" type="inverted">Yearly</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="prices | bg-neutral-100">
+        <div class="container-small">
+          <div class="prices__item | text-neutral-900">
+            <div class="prices__item__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-flame"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M12 12c2 -2.96 0 -7 -1 -8c0 3.038 -1.773 4.741 -3 6c-1.226 1.26 -2 3.24 -2 5a6 6 0 1 0 12 0c0 -1.532 -1.056 -3.94 -2 -5c-1.786 3 -2.791 3 -4 2z"
+                />
+              </svg>
+            </div>
+
+            <div class="prices__details">
+              <p class="fw-semibold fs-301">Standard</p>
+              <p class="text-primary-850 fs-900 fw-bold">$29</p>
+              <p class="fw-medium fs-200">monthly pack</p>
+            </div>
+
+            <ul>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >256 GB SSD STORE
+              </li>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >FULL UI KIT DOWNLOAD
+              </li>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >PUBLIC API
+              </li>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >FULL UI PACK DOWNLOAD
+              </li>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >24/7 SUPPORT
+              </li>
+            </ul>
+            <button class="button">Install Pack</button>
+          </div>
+          <div class="prices__item | text-neutral-900">
+            <div class="prices__item__logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-hearts"
+                width="40"
+                height="40"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M14.017 18l-2.017 2l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 0 1 8.153 5.784"
+                />
+                <path
+                  d="M15.99 20l4.197 -4.223a2.81 2.81 0 0 0 0 -3.948a2.747 2.747 0 0 0 -3.91 -.007l-.28 .282l-.279 -.283a2.747 2.747 0 0 0 -3.91 -.007a2.81 2.81 0 0 0 -.007 3.948l4.182 4.238z"
+                />
+              </svg>
+            </div>
+
+            <div class="prices__details">
+              <p class="fw-semibold fs-301">Standard</p>
+              <p class="text-primary-850 fs-900 fw-bold">$29</p>
+              <p class="fw-medium fs-200">monthly pack</p>
+            </div>
+
+            <ul>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >256 GB SSD STORE
+              </li>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >FULL UI KIT DOWNLOAD
+              </li>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >PUBLIC API
+              </li>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >FULL UI PACK DOWNLOAD
+              </li>
+              <li class="fs-100 fw-medium">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-circle-check"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#1f37ff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                  <path d="M9 12l2 2l4 -4" /></svg
+                >24/7 SUPPORT
+              </li>
+            </ul>
+            <button class="button">Install Pack</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="container-small | bg-primary-100">
+          <p class="text-primary-500 fw-semibold">NEWSLETTER</p>
+          <h5 class="text-neutral-900 fs-302 fw-bold">
+            We Offer Every Month 20% Off For Our All Subcribers
+          </h5>
+          <div class="input-container">
+            <input class="input" type="email" placeholder="Email address" />
+            <button class="button" type="button">Subscribe</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer | bg-primary-900 text-neutral-100">
+      <div class="container-small">
+        <div class="col">
+          <a href="#"><img src="images/logo.svg" alt="Company logo" /></a>
+          <ul class="social-list" role="list" aria-label="Social links">
+            <li class="social-list-item">
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-facebook"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="#ffffff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"
+                  /></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-twitter"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="#ffffff"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-instagram"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  type="empty"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+                  />
+                  <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                  <path d="M16.5 7.5l0 .01" /></svg
+              ></a>
+            </li>
+            <li class="social-list-item">
+              <a href="">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon icon-tabler icon-tabler-brand-youtube"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#ffffff"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  type="empty"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <path
+                    d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
+                  />
+                  <path d="M10 9l5 3l-5 3z" /></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col">
+          <nav class="footer__nav">
+            <ul class="footer__nav-list" aria-label="Footer" role="list">
+              <li class="footer__nav-list-item | fw-medium fs-200">MAIN</li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link | fw-regular"
+                  >Home</a
+                >
+              </li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link">Services</a>
+              </li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link">Screenshots</a>
+              </li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link">Contact</a>
+              </li>
+            </ul>
+
+            <ul class="footer__nav-list" aria-label="Footer" role="list">
+              <li class="footer__nav-list-item | fw-medium fs-200">
+                DOWNLOADS
+              </li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link | fw-regular"
+                  >How to download</a
+                >
+              </li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link">How it works</a>
+              </li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link"
+                  >Video tutorials</a
+                >
+              </li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link">FAQ</a>
+              </li>
+            </ul>
+
+            <ul class="footer__nav-list" aria-label="Footer" role="list">
+              <li class="footer__nav-list-item | fw-medium fs-200">LINKS</li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link | fw-semibold"
+                  >Google Play Store</a
+                >
+              </li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link"
+                  >Apple App Store</a
+                >
+              </li>
+              <li class="footer__nav-list-item">
+                <a href="#" class="footer__nav-list-item-link"
+                  >Download Directly</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

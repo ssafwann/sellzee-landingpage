@@ -1,0 +1,127 @@
+@use "properties/colors" as *;
+@use "properties/type-scales" as *;
+@use "properties/sizes" as *;
+@use "./media-query" as *;
+
+// ! generate color and bg classes
+@each $color, $shades in $colors {
+  @each $shade, $value in $shades {
+    .text-#{$color}-#{$shade} {
+      color: $value;
+    }
+
+    .bg-#{$color}-#{$shade} {
+      background-color: $value;
+    }
+  }
+}
+
+.fw-light {
+  font-weight: var(--fw-light);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw-semibold {
+  font-weight: var(--fw-semibold);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+// ! generate font size classes
+@each $screen-size, $font-size in $type-scale {
+  @if ($screen-size == small) {
+    @each $size, $value in $font-size {
+      .fs-#{$size} {
+        font-size: $value;
+      }
+    }
+  } @else if ($screen-size == medium) {
+    @include mq(s-desks) {
+      @each $size, $value in $font-size {
+        .fs-#{$size} {
+          font-size: $value;
+        }
+      }
+    }
+  } @else {
+    @include mq(l-desks) {
+      @each $size, $value in $font-size {
+        .fs-#{$size} {
+          font-size: $value;
+        }
+      }
+    }
+  }
+}
+
+@each $size, $value in $sizes {
+  .padding-block-#{$size} {
+    padding-block: $value;
+  }
+}
+
+.button {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-button);
+  font-weight: var(--fw-medium);
+  background-color: var(--clr-primary-500);
+  border: 0;
+  color: var(--clr-neutral-100);
+  padding: 12px 28px;
+  border-radius: 5px;
+  transition: 0.25s background-color ease-in;
+  line-height: 24px;
+  cursor: pointer;
+  width: fit-content;
+
+  &[type="extra-radius"] {
+    border-radius: 10px;
+  }
+
+  &[type="inverted"] {
+    background-color: var(--clr-primary-100);
+    color: var(--clr-primary-500);
+
+    &:hover {
+      background-color: var(--clr-primary-500);
+      color: var(--clr-neutral-100);
+    }
+  }
+
+  &[type="transparent"] {
+    background-color: transparent;
+    border: 1px solid #e5e5e5;
+  }
+
+  &:hover:not([type="inverted"]) {
+    background-color: var(--clr-primary-100);
+    color: var(--clr-primary-500);
+  }
+}
+
+.container-small {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@include mq(s-desks) {
+  .container-small {
+    width: 78%;
+  }
+}
+
+.container-large {
+  width: 98%;
+  margin: 0 auto;
+  max-width: 1200px;
+}

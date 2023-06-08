@@ -1,0 +1,110 @@
+@use "./media-query" as *;
+@use "./properties/colors" as *;
+
+.header__hamburger {
+  display: inline-block;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  position: relative;
+  z-index: 2000;
+  width: 30px;
+  height: 60px;
+  right: 0;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &.is-active:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+  &-box {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 3000;
+  }
+
+  &-inner {
+    display: block;
+    top: 40%;
+  }
+}
+
+.header__hamburger-inner,
+.header__hamburger-inner::after,
+.header__hamburger-inner::before {
+  width: 30px;
+  height: 3px;
+  background-color: var(--clr-neutral-100);
+  border-radius: 4px;
+  position: absolute;
+}
+
+.header__hamburger-inner::after,
+.header__hamburger-inner::before {
+  content: "";
+  display: block;
+}
+
+.header__hamburger-inner::before {
+  top: -10px;
+}
+
+.header__hamburger-inner::after {
+  bottom: -10px;
+}
+
+.header__hamburger--spring .header__hamburger-inner {
+  top: 25%;
+  left: 15%;
+  transition: background-color 0s 0.13s linear;
+  transition-delay: 0.22s;
+
+  &::before {
+    top: 6px;
+    transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+      transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    transition-delay: 0.22s;
+  }
+
+  &::after {
+    top: 12px;
+    transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1),
+      transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+}
+
+.header__hamburger--spring.is-active .header__hamburger-inner {
+  transition-delay: 0.22s;
+  background-color: transparent;
+  top: 10%;
+
+  &::before {
+    top: 0;
+    transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+      transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 10px, 0) rotate(45deg);
+  }
+
+  &::after {
+    top: 0;
+    transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333),
+      transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1),
+      -webkit-transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 10px, 0) rotate(-45deg);
+  }
+}
+
+@include mq(s-desks) {
+  .header__hamburger,
+  .header__hamburger-box,
+  .header__hamburger-inner {
+    display: none;
+  }
+}

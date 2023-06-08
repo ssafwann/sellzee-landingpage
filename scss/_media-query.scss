@@ -1,0 +1,16 @@
+$breakpoints: (
+  tablets: 768px,
+  s-desks: 992px,
+  l-desks: 1200px,
+);
+
+@mixin mq($key) {
+  $size: map-get(
+    $map: $breakpoints,
+    $key: $key,
+  );
+
+  @media (min-width: $size) {
+    @content;
+  }
+}
